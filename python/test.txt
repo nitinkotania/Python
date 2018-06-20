@@ -1,0 +1,1000 @@
+   62  ls
+   63  cd nso-4.2.1/
+   64  ls
+   65  cd ..
+   66  source /home/nkotania/nso-4.2.1/ncsrc
+   67  ncs-setup --dest /home/nkotania/ncs-run
+   68  cd /home/nkotania/ncs-run/
+   69  ncs
+   70  show license status
+   71  ncs --status
+   72  ncs-make-package --service-skeleton java-and-template test-pkg
+   73  ncs-make-package --service-skeleton java-and-template test_pkg
+   74  ncs-make-package --service-skeleton java-and-template test_pkg/
+   75  ncs-make-package --help
+   76  ncs-make-package --service-skeleton java-and-template test_pkg
+   77  ncs-make-package --service-skeleton java-and-template testpkg
+   78  ls
+   79  cd testpkg
+   80  ls
+   81  cd src/java/src/com/example/testpkg/
+   82  ls
+   83  vim testpkgRFS.java
+   84  vi testpkgRFS.java
+   85  sudo apt-get install vim 
+   86  vim testpkgRFS.java
+   87  cd /home/nkotania/nso-4.2.1/bin/
+   88  ls
+   89  vim ncs_cli
+   90  vimncs
+   91  vim ncs
+   92  ls 
+   93  ls -c
+   94  ls -l
+   95  cd ..
+   96  ls
+   97  cd ../ncs-run/
+   98  ls
+   99  cd testpkg/src/java/src/com/example/testpkg/
+  100  ls
+  101  vim testpkgRFS.java 
+  102  ncs-netsim create-network $NCS_DIR/packages/neds/cisco-ios 3 c
+  103  ls
+  104  cd netsim/
+  105  ls
+  106  cd c/
+  107  ls
+  108  cd c0
+  109  ls
+  110  cd ssh/
+  111  ls
+  112  cd ..
+  113  ls
+  114  cd ..
+  115  cd testpkg/
+  116  ls
+  117  cd netsim/
+  118  ls
+  119  cd c
+  120  ls
+  121  cd c0
+  122  ls
+  123  cd -
+  124  cd ../..
+  125  ls
+  126  ncs-netsim start
+  127  ncs-netsim cli-i c1
+  128  cd $HOME
+  129  ls
+  130  cd Desktop/
+  131  grep -irn "create cli" *
+  132  grep -irn "create " *
+  133  cd pdf/
+  134  grep -irn "create " *
+  135  vim nso_admin_guide-4.2.1.pdf 
+  136  grep -irn "python" *
+  137  cd ..
+  138  ls
+  139  cd .
+  140  cd ..
+  141  cd $HCS_DIR
+  142  pwd
+  143  cd $NCS_DIR
+  144  pwd
+  145  cd nso-4.2.1/
+  146  ls
+  147  cd scripts/
+  148  ls
+  149  cd command/
+  150  ls
+  151  vim device_save.sh 
+  152  ls
+  153  cd ..
+  154  ls
+  155  cd post-commit/
+  156  ls
+  157  cd ..
+  158  ls
+  159  cd command/
+  160  ls
+  161  vim device_save.sh 
+  162  ls
+  163  cd ncs-run/
+  164  ncs
+  165  cd ..
+  166  source /home/nkotania/nso-4.2.1/ncsrc
+  167  cd -
+  168  ncs
+  169  ncs status
+  170  ncs --help
+  171  ncs --status
+  172  ncs-netsim cli-i c1
+  173  ncs-netsim start
+  174  ls
+  175  ncs-netsim create-network $NCS_DIR/packages/neds/cisco-ios 3 c
+  176  cd testpkg/src/java/src/com/example/testpkg/
+  177  ls
+  178  cd netsim/
+  179  ls
+  180  ncs-netsim start
+  181  ls
+  182  cd c
+  183  ls
+  184  cd c0
+  185  ls
+  186  vim confd.c.ccl
+  187  cd .
+  188  cd testpkg/src/java/src/com/example/testpkg/
+  189  cd ../../
+  190  cd ..
+  191  ls
+  192  vim testpkgRFS.java 
+  193  cd namespaces/
+  194  ls
+  195  cd ..
+  196  ls
+  197  cd ..
+  198  ls
+  199  cd ..
+  200  ls
+  201  cd ..
+  202  ls
+  203  vim build.xml 
+  204  cd ..
+  205  ls
+  206  cd yang/
+  207  ls
+  208  vim testpkg.yang 
+  209  cd ..
+  210  ls
+  211  cd ..
+  212  ls
+  213  cd test/
+  214  ls
+  215  cdc internal/
+  216  ls
+  217  cd internal/
+  218  l;s
+  219  ls
+  220  cd lux/
+  221  ls
+  222  cd basic/
+  223  ls
+  224  vim run.lux 
+  225  cd ../../
+  226  cd ../..
+  227  ls
+  228  cd src/java/src/com/example/testpkg/
+  229  ls
+  230  ncs_cli -C -u admin
+  231  ncs run
+  232  cd $HOME
+  233  ls
+  234  cd ncs-run/
+  235  source /home/nkotania/nso-4.2.1/ncsrc
+  236  ncs-netsim start
+  237  ncs
+  238  ls
+  239  cd testpkg/
+  240  ls
+  241  cd src/
+  242  ls
+  243  cd yang/
+  244  ls
+  245  vim testpkg.yang 
+  246  cd ..
+  247  ls
+  248  cd ncs-run
+  249  ls
+  250  cd../
+  251  cd ..
+  252  ls
+  253  mkdir ncs-run-jnt
+  254  cd ncs-run-jnt/
+  255  source /home/nkotania/nso-4.2.1/ncsrc
+  256  ncs-netsim create-network $NCS_DIR/packages/neds/cisco-ios 3 c
+  257  ll
+  258  ncs-setup --netsim-dir ./netsim --dest .
+  259  ll
+  260  ncs-netsim start
+  261  ncs-netsim stop
+  262  ncs-netsim start
+  263  ncs-netsim stop
+  264  ncs-make-package --service-skeleton java-and-template vlan
+  265  ls
+  266  cd vlan/src/yang/
+  267  ls
+  268  vim vlan.yang 
+  269  cp vlan.yang 
+  270  cp vlan.yang  vlan.yang_org
+  271  vim vlan.yang 
+  272  cd ..
+  273  make all
+  274  make 
+  275  make clean
+  276  make
+  277  cd -
+  278  ls
+  279  vim vlan.yang
+  280  cd ..
+  281  make
+  282  vim vlan.yang
+  283  cd -
+  284  vim vlan.yang
+  285  cd ..
+  286  make clean
+  287  make
+  288  java/src/com/example/vlan/namespaces/vlan.java 
+  289  java java/src/com/example/vlan/namespaces/vlan.java 
+  290  ls
+  291  cd java/
+  292  ls
+  293  vim build.xml 
+  294  cd src/com/example/vlan/namespaces/
+  295  l
+  296  vim vlan.java 
+  297  cd -
+  298  cd ..
+  299  ls
+  300  cd ..
+  301  ls
+  302  cd logs/
+  303  ls
+  304  cd -
+  305  cd vlan/test/
+  306  ls
+  307  cd ..
+  308  cd src/yang/
+  309  ls
+  310  vim vlan.yang
+  311  cd ..
+  312  make
+  313  make clean
+  314  make
+  315  /home/nkotania/nso-4.2.1//bin/ncsc  `ls vlan-ann.yang  > /dev/null 2>&1 && echo "-a vlan-ann.yang"`              --yangpath yang -c -o ../load-dir/vlan.fxs yang/vlan.yang
+  316  /home/nkotania/nso-4.2.1//bin/ncsc --java-disable-prefix --exclude-enums --fail-on-warnings --java-package com.example.vlan.namespaces --emit-java java/src/com/example/vlan/namespaces/vlan.java ../load-dir/vlan.fxs 
+  317  cd java && ant -q all
+  318  sudo apt-get install ant
+  319  cd -
+  320  make clean
+  321  make all
+  322  cd ..
+  323  ncs --stop
+  324  ncs-netsim stop
+  325  ncs-netsim start
+  326  ncs --with-package-reload
+  327  ncs_cli -C -u admin
+  328  exit
+  329  cd ../ncs-run-jnt/
+  330  ls
+  331  cd vlan/src/
+  332  ls
+  333  cd yang/
+  334  ls
+  335  vim cl
+  336  vim vlan.yang
+  337  cd ../
+  338  make clean
+  339  make all
+  340  cd ..
+  341  ls
+  342  cd ..
+  343  ls
+  344  cd vlan/src/
+  345  make
+  346  make clean
+  347  make
+  348  ls
+  349  Makefile
+  350  ./Makefile
+  351  sudo ./Makefile
+  352  cd ..
+  353  ncs --stop
+  354  ncs-netsim stop
+  355  cd vlan/
+  356  ncs-netsim stop
+  357  ncs
+  358  cd ..
+  359  ncs
+  360  su adduser
+  361  su 
+  362  su -
+  363  sudo 
+  364  sudo  -
+  365  sudo su -
+  366  sudo su - flask
+  367  ls
+  368  cd ncs-run-jnt/
+  369  ls
+  370  cd packages/vlan/src/
+  371  ls
+  372  cd java/
+  373  ls
+  374  cd ../
+  375  make clean
+  376  cd ../../..
+  377  source /home/nkotania/nso-4.2.1/ncsrc
+  378  cd -
+  379  make clean
+  380  make
+  381  ncs-netsim start
+  382  cd -
+  383  ncs --with-package-reload
+  384  ncs_cli -C -u admin
+  385  echo $PATH
+  386  echo $JAVA_PATH
+  387  echo $JAVA_HOME
+  388  which java
+  389  which javac
+  390  java -version
+  391  make clean
+  392  cd ..
+  393  make clean
+  394  which java
+  395  java -version
+  396  sudo su
+  397  vim ~/.profile 
+  398  echo $PATH
+  399  sudo su
+  400  ls
+  401  cd ncs-run-jnt/
+  402  ls
+  403  cd packages/vlan/src/yang/
+  404  l
+  405  vim vlan.yang
+  406  cd ../mkae
+  407  cd ..
+  408  make clean
+  409  make all
+  410  cd ../../..
+  411  dsource /home/nkotania/nso-4.2.1/ncsrc
+  412  source /home/nkotania/nso-4.2.1/ncsrc
+  413  cd -
+  414  make all
+  415  cd ../../../
+  416  cd -
+  417  cd ..
+  418  ncs-netsim start
+  419  ncs --with-package-reload
+  420  cd ../
+  421  ncs --with-package-reload
+  422  cd ..
+  423  ncs --with-package-reload
+  424  ncs_cli -C -u admin
+  425  ncs -enbd
+  426  ncs -end
+  427  ncs --end
+  428  ncs --stop
+  429  ncs-netsim stop
+  430  cd packages/vlan/src/java/src/
+  431  make clean
+  432  make
+  433  make all
+  434  ls
+  435  cd ..
+  436  ls
+  437  cd ..
+  438  ls
+  439  make celan
+  440  make clean
+  441  make all
+  442  make clean
+  443  make all
+  444  make clean
+  445  make all
+  446  make clean
+  447  make all
+  448  make clean
+  449  make all
+  450  make clean
+  451  make all
+  452  cd ../../../
+  453  ncs-netsim start
+  454  ncs --with-package-reload
+  455  ncs_cli -C -u admin
+  456  vim  ~/.bashrc
+  457  ls -l /usr/lib/jvm
+  458  ncs_cli -C -u admin
+  459  cd packages/
+  460  ncs-make-package --service-skeleton java-and-template one
+  461  ls
+  462  cd one/
+  463  cd ../..
+  464  ncs_cli -C -u admin
+  465  ncs --stop
+  466  net-sim stop
+  467  netsim stop
+  468  ncs-netsim stop
+  469  ncs --with-package-reload
+  470  ncs-netsim start
+  471  ncs_cli -C -u admin
+  472  ncs --stop
+  473  cd packages/vlan/src
+  474  make clean
+  475  make all
+  476  make clean
+  477  make all
+  478  make clean
+  479  make all
+  480  cd -
+  481  ncs --with-package-reload
+  482  ncs_cli -C -u admin
+  483  ncs --stop
+  484  cd packages/vlan/src/
+  485  make clean
+  486  make all
+  487  ncs --with-package-reload
+  488  cd-
+  489  cd -
+  490  ncs --with-package-reload
+  491  ncs_cli -C -u admin
+  492  ncs --stop
+  493  cd -
+  494  make clean
+  495  make
+  496  cd -
+  497  ncs --with-package-reload
+  498  ncs_cli -C -u admin
+  499  ncs --stop
+  500  cd -
+  501  make clean
+  502  make all
+  503  cd -
+  504  ncs --with-package-reload
+  505  ncs_cli -C -u admin
+  506  cd -
+  507  make clean
+  508  make all
+  509  cd ../src/yang/
+  510  vim vlan.yang
+  511  cd ..//..
+  512  ls
+  513  cd ..
+  514  ls
+  515  cd ..
+  516  ls
+  517  cd logs/
+  518  ll
+  519  date
+  520  vim ncs.log
+  521  vim ncs-java-vm.log
+  522  tail -f  ncs-java-vm.log
+  523  ll
+  524  vim audit.log
+  525  vim devel.log 
+  526  tail -f  devel.log 
+  527  ls
+  528  sudo su 
+  529  su flask
+  530  su - flask
+  531  cd packages/vlan/src/yang/
+  532  vim vlan.yang
+  533  vim ../../templates/vlan-template.xml 
+  534  vim vlan.yang
+  535  vim ../../templates/vlan-template.xml 
+  536  vim ../java/src/com/example/vlan/vlanRFS.java 
+  537  ll ../java/src/com/example/vlan/vlanRFS.java 
+  538  ll ../java/src/com/example/vlan/
+  539  ll ../../../../../ncs-run-demo/packages/vlan/src/java/src/com/example/vlan/
+  540  vim ../java/src/com/example/vlan/vlanRFS.java 
+  541  cd -
+  542  cd ../../../..
+  543  ncs --with-package-reload
+  544  source /home/nkotania/nso-4.2.1/ncsrc
+  545  ncs --with-package-reload
+  546  ncs --stop
+  547  ncs --with-package-reload
+  548  ncs_cli -C -u admin
+  549  cd -
+  550  make clean; make all
+  551  cd ..
+  552  make clean; make all
+  553  make all
+  554  cd -
+  555  cd ../../..
+  556  ncs --stop
+  557  ncs --with-package-reload
+  558  ncs_cli -C -u admin
+  559  cd -
+  560  make clean
+  561  make all
+  562  make clean
+  563  make all
+  564  make clean;make all
+  565  cd -
+  566  ncs --stop;ncs --with-package-reload
+  567  ncs_cli -C -u admin
+  568  vim vlan.yang
+  569  vim  ../../templates/vlan-template.xml 
+  570  cd ../../
+  571  cd ..
+  572  ncs-make-package --service-skeleton
+  573  ncs-make-package --service-skeleton java-and-template one
+  574  cd one/
+  575  cd src/
+  576  cd java/src/com/example/
+  577  ls
+  578  cd one/
+  579  ls
+  580  vim oneRFS.java 
+  581  cd -
+  582  cd ../../../../..
+  583  cd ../vlan/
+  584  ls
+  585  cd src/yang/
+  586  ls
+  587  vim vlan.yang
+  588  vim ../../templates/vlan-template.xml 
+  589  cd ../../templates/
+  590  cp vlan-template.xml vlan-template.xml_mod
+  591  vim vlan-template.xml
+  592  vim vlan-template.xml_mod 
+  593  vim vlan-template.xml
+  594  ld
+  595  ls
+  596  cd ncs-run-jnt/
+  597  source /home/nkotania/nso-4.2.1/ncsrc
+  598  ncs-netsim start
+  599  ncs --with-package-reload
+  600  ncs_cli -C -u admin
+  601  echo $NCS_DIR
+  602  cd ..
+  603  ls
+  604  sudo su - flask
+  605  su - flask
+  606  su - flask
+  607  vim first.html
+  608  cp /home/flask/first/blockchain-python-tutorial/blockchain_client/templates ./
+  609  sudo cp /home/flask/first/blockchain-python-tutorial/blockchain_client/templates  ./
+  610  sudo cp /home/flask/first/blockchain-python-tutorial/blockchain_client/templates/register.html  ./
+  611  ls
+  612  pwd
+  613  mkdir cli_temp
+  614  cd cli_temp/
+  615  sudo cp /home/flask/first/blockchain-python-tutorial/blockchain_client/templates/  ./
+  616  sudo cp -r /home/flask/first/blockchain-python-tutorial/blockchain_client/templates/  ./
+  617  ls
+  618  cd templates/
+  619  pwd
+  620  vim test.py
+  621  python3 test.py
+  622  pwd
+  623  python3 test.py
+  624  vim test.py
+  625  python3 test.py
+  626  vim test.py
+  627  python3 test.py
+  628  vim test.py
+  629  python3 test.py
+  630  cat test.py 
+  631  vim test.py 
+  632  python3 test.py 
+  633  vim test.py 
+  634  python3 -m import test.py 
+  635  python3 -m pdb test.py 
+  636  vim test.py 
+  637  python3 test.py 
+  638  vim test.py 
+  639  python3 test.py 
+  640  ps
+  641  which ps
+  642  python3 test.py 
+  643  vim test.py 
+  644  python3 test.py 
+  645  vim test.py 
+  646  python3 test.py 
+  647  /bin/ps -aef | grep "blockchain.py"
+  648  vim test.py 
+  649  python3 test.py 
+  650  vim test.py 
+  651  python3 test.py 
+  652  vim test.py 
+  653  python3 test.py 
+  654  vim test.py 
+  655  python3 test.py 
+  656  vim test.py 
+  657  python3 test.py 
+  658  vim test.py 
+  659  python3 test.py 
+  660  vim test.py 
+  661  python3 test.py 
+  662  vim test.py 
+  663  python3 test.py 
+  664  vim test.py 
+  665  python3 test.py 
+  666  vim test.py 
+  667  python3 test.py 
+  668  vim test.py 
+  669  python3 test.py 
+  670  vim test.py 
+  671  python3 test.py 
+  672  vim test.py 
+  673  python3 test.py 
+  674  python3 -m pdb test.py 
+  675  vim test.py 
+  676  python3 -m pdb test.py 
+  677  vim test.py 
+  678  python3 -m pdb test.py 
+  679  python3  test.py 
+  680  vim test.py 
+  681  python3  test.py 
+  682  vim test.py 
+  683  python3  test.py 
+  684  vim test.py 
+  685  python3  test.py 
+  686  vim test.py 
+  687  python3  test.py 
+  688  vim test.py 
+  689  python3  test.py 
+  690  vim test.py 
+  691  python3  test.py 
+  692  vim test.py 
+  693  python3  test.py 
+  694  vim test.py 
+  695  python3  test.py 
+  696  vim test.py 
+  697  python3  test.py 
+  698  vim test.py 
+  699  ps -aef | gre "blockchain"
+  700  ps -aef | grep "blockchain"
+  701  ps -aef | grep "python3 blockchain"
+  702  ps -aef | grep "python3 blockchain.py"
+  703  pkill python3 blockchain.py -p 5000
+  704  pkill 'python3 blockchain.py -p 5000'
+  705  ps -aef | grep "python3 blockchain.py"
+  706  vim test.py 
+  707  ps -aef | grep "python3 blockchain.py"
+  708  pkill -f 'python3 blockchain.py -p 5000'
+  709  sduo pkill -f 'python3 blockchain.py -p 5000'
+  710  sudo  pkill -f 'python3 blockchain.py -p 5000'
+  711  ps -aef | grep "python3 blockchain.py"
+  712  vim /etc/sudoers
+  713  sudo vim /etc/sudoers
+  714  ps -aef | grep "python3 blockchain"
+  715  sudo  pkill -f 'python3 blockchain.py -p 5000'
+  716  ps -aef | grep "python3 blockchain"
+  717  su - flask
+  718  cat /home/someone/.ethereum/geth.ipc
+  719  vim /home/someone/.ethereum/geth.ipc
+  720  geth
+  721  sudo apt-get install geth
+  722  sudo apt-get install software-properties-common
+  723  sudo add-apt-repository -y ppa:ethereum/ethereum
+  724  sudo apt-get update
+  725  sudo apt-get install ethereum
+  726  geth version
+  727  wget https://github.com/ethereum/mist/releases/download/v0.9.0/Ethereum-Wallet-linux64-0-9-0.zip
+  728  ls
+  729  mkdir ethe
+  730  mv Ethereum-Wallet-linux64-0-9-0.zip ethe/
+  731  cd ethe
+  732  unzip Ethereum-Wallet-linux64-0-9-0.zip 
+  733  ls
+  734  cd linux-unpacked/
+  735  ls
+  736  cd ethereumwallet
+  737  vim ethereumwallet
+  738  cd ..
+  739  ls
+  740  cd linux-unpacked/
+  741  ./ethereumwallet
+  742  sudo apt-get install software-properties-common
+  743  sudo add-apt-repository -y ppa:ethereum/ethereum
+  744  ./ethereumwallet
+  745  ls
+  746  cd linux-unpacked/
+  747  ls
+  748  cd ..
+  749  ls
+  750  mkdir geth && cd  geth
+  751  mkdir privchain
+  752  touch genesis.json
+  753  vim genesis.json 
+  754  ls
+  755  geth --datadir privchain init genesis.json
+  756  vim genesis.json 
+  757  geth --datadir privchain init genesis.json
+  758  ls
+  759  geth --port 3020 --networkid 58342 --nodiscover --datadir="privchain" --maxpeers=0 --ipcpath $HOME/.ethereum/geth.ipc
+  760  cd ..
+  761  ls
+  762  ll
+  763  cd ethereum-ex/
+  764  ls
+  765  vim package.json 
+  766  vim truffle-config.js 
+  767  vim truffle.js 
+  768  vim utils.js 
+  769  cd ..
+  770  git clone https://github.com/devzl/ethereum-walkthrough-1.git
+  771  cd ethereum-walkthrough-1/
+  772  ls
+  773  vim Wrestling.sol 
+  774  cd ../..
+  775  ls
+  776  cd Desktop/
+  777  ls
+  778  cd ../Downloads/
+  779  ls
+  780  mkdir ../ether10
+  781  mv Ethereum-Wallet-linux64-0-10-0.zip  ../ether10/
+  782  cd ../ether10/
+  783  unzip Ethereum-Wallet-linux64-0-10-0.zip 
+  784  ls
+  785  ./ethereumwallet 
+  786  cd $HOME
+  787  vim .config/Ethereum Wallet/logs/all.log
+  788  vim .config/EthereumWallet/logs/all.log
+  789  vim .config/Ethereum_Wallet/logs/all.log
+  790  vim  .config/Ethereum\ Wallet/logs/all.log
+  791  vim  .config/Ethereum\ Wallet/logs/all.log.0
+  792  ll /home/nkotania/.ethereum/geth.ipc
+  793  vim /home/nkotania/.ethereum/geth.ipc
+  794  geth --rinkeby
+  795  truffle compile
+  796  truffle test
+  797  ls
+  798  vim truffle-config.js 
+  799  vim truffle.js 
+  800  sudo npm install -g ethereumjs-testrpc
+  801  cd $HOME
+  802  sudo npm install -g ethereumjs-testrpc
+  803  testrpc
+  804  ls
+  805  mkdir res
+  806  cd res
+  807  vim rinkeby.json
+  808  geth --datadir=$HOME/.rinkeby init rinkeby.json
+  809  ls
+  810  geth --networkid=4 --datadir=$HOME/.rinkeby --syncmode=light --ethstats='yournode:Respect my authoritah!@stats.rinkeby.io' --bootnodes=enode://a24ac7c5484ef4ed0c5eb2d36620ba4e4aa13b8c84684e1b4aab0cebea2ae45cb4d375b77eab56516d34bfbd3c1a833fc51296ff084b770b94fb9028c4d25ccf@52.169.42.101:30303
+  811  geth --networkid=4 --datadir=$HOME/.rinkeby --syncmode=light --ethstats='nkotania:Respect my authoritah!@stats.rinkeby.io' --bootnodes=enode://a24ac7c5484ef4ed0c5eb2d36620ba4e4aa13b8c84684e1b4aab0cebea2ae45cb4d375b77eab56516d34bfbd3c1a833fc51296ff084b770b94fb9028c4d25ccf@52.169.42.101:30303
+  812  ￼  ACCOUNT 1 0.00 ether 0x4068B2496e86831352BE725cb86446915E04c378WALLET CONTRACTS
+  813  sudo apt-get install ntp
+  814  ￼  ACCOUNT 1 0.00 ether 0x4068B2496e86831352BE725cb86446915E04c378WALLET CONTRACTS
+  815  cd $HOME
+  816  ls
+  817  ls -a
+  818  vim .Xauthority
+  819  cd res/
+  820  ls
+  821  ls -a
+  822  cd ..
+  823  vim .rinkeby/geth.ipc 
+  824  sudo vim .rinkeby/geth.ipc 
+  825  cd .rinkeby/
+  826  ls
+  827  cd keystore/
+  828  ls
+  829  ls -a
+  830  cd ..
+  831  cd geth/
+  832  ls
+  833  vim nodekey 
+  834  cd chaindata
+  835  ls
+  836  cd ..
+  837  cd lightchaindata/
+  838  ls
+  839  cd ..
+  840  ls
+  841  vim nodekey 
+  842  geth attach
+  843  geth attach /home/nkotania/.ethereum/geth.ipc
+  844  geth console
+  845  geth --help
+  846  geth wallet
+  847  geth attach
+  848  geth account list
+  849  geth attach
+  850  cd ../
+  851  cd ethereum-ex/
+  852  ls
+  853  sudo npm install
+  854  ganache-cli
+  855  geth attach -rpc http://127.0.0.1:8545
+  856  geth attach -rpc /home/nkotania/.rinkeby/geth.ipc
+  857  geth attach --rpc /home/nkotania/.rinkeby/geth.ipc
+  858  geth attach --datadir "/home/nkotania/.rinkeby
+  859  mist –rpc http://127.0.0.1:8545
+  860  ether –rpc http://127.0.0.1:8545
+  861  cd ../../ether10/
+  862  ./ethereumwallet -rpc http://127.0.0.1:8545
+  863  ps -aef | grep "127"
+  864  ./ethereumwallet -rpc /home/nkotania/ethe/geth/chaindata/geth.ipc
+  865  ./ethereumwallet -rpc http://127.0.0.1:7545
+  866  ./ethereumwallet -rpc http://127.0.0.1:8545
+  867  truffle console --network development
+  868  cd ..
+  869  truffle console --network development
+  870  truffle console --network rinkeby
+  871  truffle compile
+  872  truffle migrate --network development
+  873  cd ..
+  874  vim truffle-config.js 
+  875  truffle migrate --network development
+  876  ls
+  877  vim truffle-config.js 
+  878  truffle migrate --network ourTestNet
+  879  ls
+  880  cd new/
+  881  ls
+  882  cd contracts/
+  883  ls
+  884  cd ..
+  885  vim truffle.js 
+  886  vim truffle-config.js 
+  887  vim truffle.js 
+  888  vim truffle-config.js 
+  889  mkdir new1
+  890  cd new1/
+  891  truffle console --network rinkeby
+  892  ls
+  893  vim truffle.js
+  894  cd ..
+  895  ls
+  896  vim truffle.js 
+  897  vim truffle-config.js 
+  898  truffle console --network rinkeby
+  899  ls
+  900  cd ..
+  901  ls
+  902  cd ether10/
+  903  ls
+  904  ./ethereumwallet 
+  905  ethereumwallet --rpc /home/nkotania/.ethereum/geth.ipc
+  906  ./ethereumwallet 
+  907  geth
+  908  geth --datadir=$HOME/.rinkeby attach ipc:$HOME/.rinkeby/geth.ipc console
+  909  dial unix /home/nkotania/.rinkeby/geth.ipc
+  910  geth attach http://localhost:8545
+  911  ls
+  912  cd ..
+  913  ls
+  914  cd ether
+  915  l
+  916  cd ethe
+  917  ls
+  918  cd geth/
+  919  ls
+  920  cd ../../ether10/
+  921  ls
+  922  geth --help
+  923  geth account
+  924  geth account -
+  925  geth account -list
+  926  geth account list
+  927  geth account new
+  928  geth account list
+  929  geth account
+  930  geth 
+  931  ethereumwallet --rpc /home/nkotania/.ethereum/geth.ipc
+  932  ./ethereumwallet --rpc /home/nkotania/.ethereum/geth.ipc
+  933  ls
+  934  lsls
+  935  ls
+  936  pwd
+  937  truffle console --network rinkeby
+  938  ls
+  939  ./ethereumwallet --rpc /home/nkotania/.rinkeby/geth.ipc 
+  940  cd $HOME
+  941  ls
+  942  cd ethereum-ex
+  943  ls
+  944  cd contracts/
+  945  ls
+  946  vim Deal.sol 
+  947  pwd
+  948  cd ../
+  949  cd ..
+  950  ls
+  951  cd ethe
+  952  ls
+  953  cd ..
+  954  cd -
+  955  cd geth/
+  956  ls
+  957  geth --port 3020 --networkid 58342 --nodiscover --datadir="privchain" --maxpeers=0 --ipcpath $HOME/.ethereum/geth.ipc
+  958  geth --port 3020 --networkid 58342 --nodiscover --datadir="privchain" --maxpeers=10 --ipcpath $HOME/.ethereum/geth.ipc
+  959  ls
+  960  geth --port 3020 --networkid 58342 --nodiscover --datadir="privchain" --maxpeers=10 --ipcpath $HOME/.ethereum/geth.ipc
+  961  geth --datadir=./chaindata/ init ./genesis.json
+  962  ls
+  963  geth --datadir=./chaindata/ --rpc
+  964  ls
+  965  vim genesis.json 
+  966  ls
+  967  cd ..
+  968  ls
+  969  cd -
+  970  web3.eth.getBalance('0xf794fB00f06FBD673cE3DB5EB0339c1e78dD0c3b')
+  971  geth cponsole
+  972  geth console
+  973  geth account list
+  974  ls
+  975  ls
+  976  git clone https://github.com/devzl/ethereum-walkthrough-2.git
+  977  cd ethereum-walkthrough-2
+  978  ls
+  979  npm install -g truffle
+  980  sudo apt-get install npm
+  981  npm install -g truffle
+  982  sudo npm install -g truffle
+  983  sudo npm install -g ganache-cli
+  984  truffle init
+  985  truffle 
+  986  ll
+  987  mkdir new
+  988  cd new/
+  989  truffle init
+  990  ln -s /usr/bin/nodejs /usr/bin/node
+  991  sudo ln -s /usr/bin/nodejs /usr/bin/node
+  992  truffle init
+  993  ls
+  994  cd ..
+  995  truffle init
+  996  npm uninstall -g truffle
+  997  apt purge npm
+  998  SUDO npm uninstall -g truffle
+  999  sudo SUDO npm uninstall -g truffle
+ 1000  sudo npm uninstall -g truffle
+ 1001  sudo apt purge npm
+ 1002  curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+ 1003  sudo apt-get install curl
+ 1004  curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+ 1005  sudo apt-get install -y nodejs
+ 1006  npm i -g truffle
+ 1007  sudo npm i -g truffle
+ 1008  truffle init
+ 1009  echo $PATH
+ 1010  which truffle 
+ 1011  truffle 
+ 1012  /usr/bin/truffle init
+ 1013  ls
+ 1014  cd new/
+ 1015  /usr/bin/truffle init
+ 1016  cd ..
+ 1017  ls
+ 1018  cd -
+ 1019  ganache-cli -p 7545
+ 1020  ls
+ 1021  vim truffle-config.js 
+ 1022  vim truffle.js 
+ 1023  vim truffle-config.js 
+ 1024  /usr/bin/truffle init
+ 1025  ganache-cli -p 7545
+ 1026  cd new1/
+ 1027  /usr/bin/truffle init
+ 1028  ganache-cli -p 8545
+ 1029  ls
+ 1030  cd practice/python/
+ 1031  ls
+ 1032  cd robot/
+ 1033  git config
+ 1034  git config user
+ 1035  git config user.name
+ 1036  git config 
+ 1037  git config --local
+ 1038  git config --list
+ 1039  vim ~/.gitconfig
+ 1040  cd ../../
+ 1041  git init
+ 1042  git config --global user.name "nitinkotania"
+ 1043  git config --global user.email nitin.kotania@gmail.com
+ 1044  git inyi
+ 1045  git init
+ 1046  push robot
+ 1047  git
+ 1048  git push robot
+ 1049  git push --set-upstream robot master
+ 1050  ls
+ 1051  git pull
+ 1052  cd python/
+ 1053  ls
+ 1054  git push robot
+ 1055  git push --set-upstream robot master
+ 1056  git pull
+ 1057  git remote add origin https://github.com/nitinkotania/Python.git
+ 1058  git push -u origin master
+ 1059  git pull
+ 1060  touch test.txt
+ 1061  history > test.txt 
